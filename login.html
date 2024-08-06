@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>home</title>
+      
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css.css">
+<script>
+  function myFun(){
+      var uname=document.myform.username.value;
+      var password=document.myform.password.value;
+      if(uname==null || uname==""){
+          alert("username should not blank")
+          return false;
+      }
+      else if(password.length<6){
+          alert("password must have 6 letters")
+          return false;
+      }
+      else{
+          return true;
+      }
+  }
+  
+</script>
+        <style >
+           
+            
+
+img {
+  max-width: 100%;
+  max-height:100%;
+  float: left;
+}
+.text {
+  font-size: 40px;
+  padding-left: 20px;
+  float: left;
+  text-shadow: 2px 2px 8px green;
+}
+
+    
+  </style>
+</head>
+<body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                   <a class ="navbar-brand" href="">Airlines</a> 
+                </div>    
+             <ul class="nav navbar-nav">
+                <li><a href="./round.html">Round The World</a></li>
+                
+                <li><a href="./booking.html">Flight Booking</a></li>
+                <li><a href="./lang.html"><img width="30" height="30" src="lan.png"></a></li>
+                <li><a href="./signup.html">Signup</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                  
+             </ul>
+        </div>
+        </nav>
+        <center>
+            <h1>Login</h1>
+            <div class="box">
+            <form name="myform" action="homepage.html" onsubmit="return myFun(this)">
+              username:<input type="text" name="username"><br><br>
+             
+              password:<input type="password" name="password"><br><br>
+              <center>
+              <input type="submit"></center>
+              <br>
+              <br>
+              <center>
+              <a href="signup.html" >forgot password?</a></h4></center>
+          </form>
+          </div>
+          </center>
+      </section
+  </body>
+</html>
